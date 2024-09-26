@@ -264,12 +264,12 @@ contains
     dt.date     = dt.yyyy//"-"//dt.mm//"-"//dt.dd
     dt.time     = dt.hh//":"//dt.nn//":"//dt.ss
     dt.datetime = dt.date//" "//dt.time
-    read ( dt.yyyy, * ) dt.yr
-    read ( dt.mm,   * ) dt.mo
-    read ( dt.dd,   * ) dt.dy
-    read ( dt.hh,   * ) dt.hr
-    read ( dt.nn,   * ) dt.mi
-    read ( dt.ss,   * ) dt.sc
+    read( dt.yyyy, * ) dt.yr
+    read( dt.mm,   * ) dt.mo
+    read( dt.dd,   * ) dt.dy
+    read( dt.hh,   * ) dt.hr
+    read( dt.nn,   * ) dt.mi
+    read( dt.ss,   * ) dt.sc
     dt.leap = leap_yr ( dt.yr )
     if ( dt.mo /= 0 .and. dt.dy /= 0 ) then
       dt.dow = day_of_the_week ( dt.yr, dt.mo, dt.dy )
