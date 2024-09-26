@@ -1,5 +1,5 @@
 set ( EXE unit_test1 )
-set ( SRCS ./unit_test1.f90
+set ( SRCS ./test.f90
            ../src/dt_mo.f90
     )
 
@@ -13,3 +13,4 @@ set ( CMAKE_C_FLAGS "-O -Wno-stringop-overflow")
 add_executable ( ${EXE} ${SRCS} )
 target_link_libraries ( ${EXE} ${LIBS} )
 add_test ( NAME ${EXE} COMMAND ${EXE} ${ARGS} WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR} )
+install ( TARGETS ${EXE} DESTINATION bin )

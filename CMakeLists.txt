@@ -1,12 +1,7 @@
 cmake_minimum_required ( VERSION 3.0 )
-
 set ( CMAKE_Fortran_COMPILER gfortran )
 set ( CMAKE_C_COMPILER gcc )
-
 enable_language ( Fortran C )
 enable_testing ()
-
-project ( hello LANGUAGES Fortran VERSION 1.0.0 )
-
-add_subdirectory ( apps )
+project ( fortran-datetime LANGUAGES Fortran VERSION 1.0.0 )
 add_subdirectory ( tests )

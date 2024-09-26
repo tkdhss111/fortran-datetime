@@ -1,4 +1,4 @@
-program test
+program unit_test1
   use dt_mo
   implicit none
   type(dt_ty)                :: dt
@@ -11,7 +11,7 @@ program test
   !
   ! strftime datetime test
   !
-  dt = dt%now()
+  dt = dt.now()
   print '(a)', 'strftime: %Y-%m-%d 01:00'
   datetime = strftime ( dt, '%Y-%m-%d %H:01:00' )
   print '(a, a)', 'datatime: ', datetime
@@ -21,7 +21,7 @@ program test
   !
   print '(a)', 'read datatime with T: 2008-01-01T00:00:00'
   dt = strptime ( '2008-01-01T00:00:00' )
-  print '(a, a)', 'datatime with T: ', dt%datetime
+  print '(a, a)', 'datatime with T: ', dt.datetime
 
   !
   ! dt_ty object 
@@ -33,8 +33,8 @@ program test
 
   ! Test current time
   print '(a)', "Current time"
-  dt = dt%now ()
-  print '(a40, a30)', "dt%now (): ", dt%datetime 
+  dt = dt.now ()
+  print '(a40, a30)', "dt.now (): ", dt%datetime 
   print '(a)', ''
 
   ! Test user-defined time
