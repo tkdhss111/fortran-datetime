@@ -617,27 +617,24 @@ contains
     end if
   end function
 
-  !! DEPRECATED: Slow
-  !pure elemental integer function ndays_mon ( yr, mo )
-  !  integer, intent(in) :: yr, mo
-  !  integer, parameter  :: ndays_mons(12) = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-  !  if ( mo == 2 .and. is_leap_yr ( yr ) ) then ! Do not touch here, best speed so far
-  !    ndays_mon = ndays_mons ( mo ) + 1
-  !  else
-  !    ndays_mon = ndays_mons ( mo )
-  !  end if
-  !end function
+  pure elemental integer function ndays_mon ( yr, mo )
+    integer, intent(in) :: yr, mo
+    integer, parameter  :: ndays_mons(12) = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    if ( mo == 2 .and. is_leap_yr ( yr ) ) then ! Do not touch here, best speed so far
+      ndays_mon = ndays_mons ( mo ) + 1
+    else
+      ndays_mon = ndays_mons ( mo )
+    end if
+  end function
 
   pure elemental integer function ndays_mon ( yr, mo )
     integer, intent(in) :: yr, mo
     integer, parameter  :: ndays_mons(12) = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-    if ( mo == 2 ) then
-      if ( is_leap_yr ( yr ) ) then
-        ndays_mon = ndays_mons ( mo ) + 1
-        return
-      end if
+    if ( mo == 2 .and. is_leap_yr ( yr ) ) then ! Do not touch here, best speed so far
+      ndays_mon = ndays_mons ( mo ) + 1
+    else
+      ndays_mon = ndays_mons ( mo )
     end if
-    ndays_mon = ndays_mons ( mo )
   end function
 
   pure elemental integer function count_days ( yr, mo, dy, epochyr0 )
