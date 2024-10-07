@@ -1,12 +1,9 @@
-CMAKE       := cmake .. -GNinja
-CMAKE_DBG   := $(CMAKE) -DCMAKE_BUILD_TYPE=Debug
-NINJA       := ninja
-MKDIR       := mkdir -p
-MKDIR_BUILD := $(MKDIR) build && cd build
+CMAKE       := cmake .. -GNinja -DCMAKE_BUILD_TYPE=Debug
+MKDIR_BUILD := mkdir -p build && cd build
 
 .PHONY: test
 test:
-	$(MKDIR_BUILD) && $(CMAKE_DBG) && $(NINJA) && ctest -VV
+	$(MKDIR_BUILD) && $(CMAKE) && ninja && ctest -VV
 
 clean:
 	rm -r build

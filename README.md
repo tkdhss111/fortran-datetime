@@ -1,4 +1,4 @@
-# High Purity Datetime Functions Focused on Speed
+# High Purity Datetime Fortran Functions Focused on Speed
 
 ## Installation and Test
 
