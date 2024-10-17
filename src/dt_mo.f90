@@ -685,9 +685,9 @@ contains
     class (tm_ty) this
     call system_clock ( this%end, this%rate, this%max )
     if ( this%end < this%start ) then
-      this.diff = ( this%max - this%start ) + this%end + 1
+      this%diff = ( this%max - this%start ) + this%end + 1
     else
-      this.diff = this%end - this%start
+      this%diff = this%end - this%start
     end if
     write ( this%msg, '(a, f10.2, a)' ) "Elapsed time: ", this%diff / real(this%rate), " seconds"
     print*, trim(this%msg)
