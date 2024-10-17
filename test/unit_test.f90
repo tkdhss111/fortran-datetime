@@ -1,6 +1,9 @@
-program unit_test1
+program unit_test
+
   use dt_mo
+
   implicit none
+
   type(tm_ty)                :: tm ! Timer object
   type(dt_ty)                :: dt ! Datetime object
   type(dt_ty),   allocatable :: dts(:), dts_hours(:)
