@@ -15,7 +15,7 @@ module dt_mo
   public :: dt_ty, diff_dt_ty, diff_dt, seq_dt, get_datetime
   public :: diff_days, diff_hrs, diff_mins
   public :: strptime, strftime, print_dts
-  public :: get_pos_rec
+  public :: get_rec_date, get_pos_rec
   public :: LAB_WDAY, LAB_WDAY_JP, leap_yr
   public :: count_days
   public :: day_of_the_week
@@ -63,6 +63,13 @@ module dt_mo
   end type
 
 contains
+
+  pure elemental integer function get_rec_date ( date )
+    character(10), intent(in) :: date
+    type(dt_ty) t
+    t = strptime( date, fmt = '%Y-%m-%d' )
+    get_rec_date = count_days ( yr = t%yr, mo = t%mo, dy = t%dy )
+  end function
 
   pure elemental integer function get_pos_rec ( x, secs0 )
     !
@@ -126,8 +133,8 @@ contains
     class(dt_ty), intent(in) :: dt_to
     type(dt_ty),  intent(in) :: dt_fr
     integer                  :: ndays_fr, ndays_to
-    ndays_fr = count_days ( yr = dt_fr%yr, mo = dt_fr%mo, dy = dt_fr%dy, epochyr0 = dt_fr%yr ) - 1 ! til previous day
-    ndays_to = count_days ( yr = dt_to%yr, mo = dt_to%mo, dy = dt_to%dy, epochyr0 = dt_fr%yr ) - 1 ! Epoch year is same
+    ndays_fr = count_days ( yr = dt_fr%yr, mo = dt_fr%mo, dy = dt_fr%dy, epochyr = dt_fr%yr ) - 1 ! til previous day
+    ndays_to = count_days ( yr = dt_to%yr, mo = dt_to%mo, dy = dt_to%dy, epochyr = dt_fr%yr ) - 1 ! Epoch year is same
     ! N.B. By doing the following, we can avoid overflow of integer(4)
     diff_secs = (ndays_to - ndays_fr) * NSECS_D &
               + (dt_to%hr - dt_fr%hr) * NSECS_H &
@@ -210,16 +217,16 @@ contains
     get_datetime = yyyy//"-"//mm//"-"//dd//" "//hh//":"//nn//":"//ss
   end function
 
-  pure elemental function strptime ( str, fmt0 ) result ( dt )
+  pure elemental function strptime ( str, fmt ) result ( dt )
     character(*),           intent(in) :: str
-    character(*), optional, intent(in) :: fmt0
-    character(19)                      :: fmt
+    character(*), optional, intent(in) :: fmt
+    character(19)                      :: fmt_
     type(dt_ty)                        :: dt
     integer i_f, i_s
-    if ( present(fmt0) ) then
-      fmt = trim(fmt0)
+    if ( present(fmt) ) then
+      fmt_ = trim(fmt)
     else
-      fmt = '%Y-%m-%d %H:%M:%S'
+      fmt_ = '%Y-%m-%d %H:%M:%S'
     end if
     write( dt%yyyy, '(i4)' ) EPOCHYEAR
     dt%yy = dt%yyyy(3:4)
@@ -230,12 +237,12 @@ contains
     dt%ss = '00'
     i_f = 1
     i_s = 0
-    do while ( i_f <= len_trim( fmt ) )
-      if ( fmt(i_f:i_f) /= '%' ) then
+    do while ( i_f <= len_trim( fmt_ ) )
+      if ( fmt_(i_f:i_f) /= '%' ) then
         i_s = i_s + 1 
         i_f = i_f + 1
       else
-        select case ( fmt(i_f + 1:i_f + 1) )
+        select case ( fmt_(i_f + 1:i_f + 1) )
           case ( 'Y' )
             dt%yyyy = str(i_s + 1:i_s + 4)
             dt%yy   = str(i_s + 3:i_s + 4)
@@ -277,7 +284,7 @@ contains
       dt%dow = day_of_the_week ( dt%yr, dt%mo, dt%dy )
     end if
     if ( dt%mo /= 0 .and. dt%dy /= 0 ) then
-      dt%doy = count_days ( dt%yr, dt%mo, dt%dy, epochyr0 = dt%yr )
+      dt%doy = count_days ( dt%yr, dt%mo, dt%dy, epochyr = dt%yr )
     end if
     dt%dsc = dt%hr * 60 * 60 + dt%mi * 60 + dt%sc
   end function
@@ -631,20 +638,20 @@ contains
     ndays_mon = ndays_mons ( mo )
   end function
 
-  pure elemental integer function count_days ( yr, mo, dy, epochyr0 )
+  pure elemental integer function count_days ( yr, mo, dy, epochyr )
 
     integer, intent(in)           :: yr, mo, dy
-    integer, intent(in), optional :: epochyr0
-    integer                       :: n, i_y, i_m, epochyr
+    integer, intent(in), optional :: epochyr
+    integer                       :: n, i_y, i_m, epochyr_
 
-    if ( present( epochyr0 ) ) then
-      epochyr = epochyr0
+    if ( present( epochyr ) ) then
+      epochyr_ = epochyr
     else
-      epochyr = EPOCHYEAR
+      epochyr_ = EPOCHYEAR
     end if
 
     ! DO NOT REMOVE (e.g., used for indexing by count(n%days < 0) by other applications )
-    if ( yr < epochyr ) then
+    if ( yr < epochyr_ ) then
       count_days = -999
       return
     end if
@@ -652,8 +659,8 @@ contains
     n = 0
 
     ! Adding up number of days at the end of the year after epoch year 
-    if ( yr > epochyr ) then
-      do i_y = epochyr, yr - 1
+    if ( yr > epochyr_ ) then
+      do i_y = epochyr_, yr - 1
         n = n + 365
         if ( is_leap_yr ( i_y ) ) n = n + 1
       end do

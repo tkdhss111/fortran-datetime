@@ -55,8 +55,8 @@ program unit_test
   ! Test user-defined time with format
   print '(a)', "User-defined time with format"
   dt = strptime ( '2020-12-31 23:04:05' )
-  dt = strptime ( '201231', fmt0 = '%y%m%d' )
-  print '(a40, a30)', "strptime ( '201231', fmt0 = '%y%m%d' ): ", dt%datetime 
+  dt = strptime ( '201231', fmt = '%y%m%d' )
+  print '(a40, a30)', "strptime ( '201231', fmt = '%y%m%d' ): ", dt%datetime 
   print '(a)', ''
 
   ! Test dt_ty object via character array
