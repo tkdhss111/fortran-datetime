@@ -185,35 +185,35 @@ contains
           dts(i + 1) = plus_secs ( dts(i), step )
         end do
     end select
-    cts = get_datetime ( yr0 = dts%yr, mo0 = dts%mo, dy0 = dts%dy, hr0 = dts%hr, mi0 = dts%mi, sc0 = dts%sc )
+    cts = get_datetime ( yr = dts%yr, mo = dts%mo, dy = dts%dy, hr = dts%hr, mi = dts%mi, sc = dts%sc )
     dts = strptime ( cts )
     ! N.B. The following implementation is deprecated (sometimes, tihs causes segmentation fault).
-    !dts = strptime ( get_datetime ( yr0 = dts%yr, mo0 = dts%mo, dy0 = dts%dy, hr0 = dts%hr, mi0 = dts%mi, sc0 = dts%sc ) )
+    !dts = strptime ( get_datetime ( yr = dts%yr, mo = dts%mo, dy = dts%dy, hr = dts%hr, mi = dts%mi, sc = dts%sc ) )
   end function
 
-  pure elemental character(19) function get_datetime ( yr0, mo0, dy0, hr0, mi0, sc0 )
-    integer, optional, intent(in) :: yr0, mo0, dy0, hr0, mi0, sc0
-    integer                       :: yr, mo, dy, hr, mi, sc
+  pure elemental character(19) function get_datetime ( yr, mo, dy, hr, mi, sc )
+    integer, optional, intent(in) :: yr, mo, dy, hr, mi, sc
+    integer                       :: yr_, mo_, dy_, hr_, mi_, sc_
     character(4)                  :: yyyy
     character(2)                  :: mm, dd, hh, nn, ss
-    yr = EPOCHYEAR
-    mo = 1
-    dy = 1
-    hr = 0
-    mi = 0
-    sc = 0
-    if ( present(yr0) ) yr = yr0
-    if ( present(mo0) ) mo = mo0
-    if ( present(dy0) ) dy = dy0
-    if ( present(hr0) ) hr = hr0
-    if ( present(mi0) ) mi = mi0
-    if ( present(sc0) ) sc = sc0
-    write ( yyyy, "(i4)" ) yr
-    write ( mm, "(i2.2)" ) mo
-    write ( dd, "(i2.2)" ) dy
-    write ( hh, "(i2.2)" ) hr
-    write ( nn, "(i2.2)" ) mi
-    write ( ss, "(i2.2)" ) sc
+    yr_ = EPOCHYEAR
+    mo_ = 1
+    dy_ = 1
+    hr_ = 0
+    mi_ = 0
+    sc_ = 0
+    if ( present(yr) ) yr_ = yr
+    if ( present(mo) ) mo_ = mo
+    if ( present(dy) ) dy_ = dy
+    if ( present(hr) ) hr_ = hr
+    if ( present(mi) ) mi_ = mi
+    if ( present(sc) ) sc_ = sc
+    write ( yyyy, "(i4)" ) yr_
+    write ( mm, "(i2.2)" ) mo_
+    write ( dd, "(i2.2)" ) dy_
+    write ( hh, "(i2.2)" ) hr_
+    write ( nn, "(i2.2)" ) mi_
+    write ( ss, "(i2.2)" ) sc_
     get_datetime = yyyy//"-"//mm//"-"//dd//" "//hh//":"//nn//":"//ss
   end function
 

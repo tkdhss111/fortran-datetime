@@ -69,7 +69,7 @@ program unit_test
 
   ! Test dt_ty object via integer array ( get_datetime function test )
   print '(a)', "dt_ty object setup via integer array ( get_datetime function test )"
-  datetimes = get_datetime ( yr0=[2020, 2012, 2000], mo0=[2,3,4], dy0=[1,4,6], hr0=[4,0,5],mi0=[1,3,5], sc0=[0,20,30] ) 
+  datetimes = get_datetime ( yr=[2020, 2012, 2000], mo=[2,3,4], dy=[1,4,6], hr=[4,0,5],mi=[1,3,5], sc=[0,20,30] ) 
   dts = strptime ( datetimes )
   print '(*(1x, a19))',       "datetime : ", [(dts(i)%datetime,  i = 1, n)]
   print '(a)', ''
