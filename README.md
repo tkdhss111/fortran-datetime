@@ -1,9 +1,11 @@
-# High Purity Datetime Fortran Functions Focused on Speed
+# Fortran Datetime Functions
 
 ## Installation and Test
 
-$ mkdir build  
-$ cd build  
-$ cmake ..  
-$ make  
-$ ./test  
+```
+mkdir build  
+cd build  
+cmake ..  
+make  
+./test  
+```
