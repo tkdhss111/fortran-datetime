@@ -241,8 +241,8 @@ contains
 
   subroutine test_diff_dt ( datetimes )
 
-    character(*)             :: datetimes(:)
-    type(dt_ty)              :: dts0(2)
+    character(*)            :: datetimes(:)
+    type(dt_ty)             :: dts0(2)
     type(diff_dt_ty)        :: n
     integer nsecs
 

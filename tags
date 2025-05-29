@@ -1,0 +1,494 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CMAKE	makefile	/^CMAKE       := cmake .. -GNinja -DCMAKE_BUILD_TYPE=Debug$/;"	m
+EPOCHYEAR	src/bak/dt_mo_2024-10-17_1116.f90	/^  integer,      parameter :: EPOCHYEAR /;"	v	module:dt_mo
+EPOCHYEAR	src/bak/dt_mo_2024-10-30_2246.f90	/^  integer,      parameter :: EPOCHYEAR /;"	v	module:dt_mo
+EPOCHYEAR	src/bak/dt_mo_2024-11-23_1042.f90	/^  integer,      parameter :: EPOCHYEAR /;"	v	module:dt_mo
+EPOCHYEAR	src/bak/dt_mo_2024-11-23_1043.f90	/^  integer,      parameter :: EPOCHYEAR /;"	v	module:dt_mo
+EPOCHYEAR	src/bak/dt_mo_2024-11-23_1201.f90	/^  integer,      parameter :: EPOCHYEAR /;"	v	module:dt_mo
+EPOCHYEAR	src/bak/dt_mo_2024-12-16_0835.f90	/^  integer,      parameter :: EPOCHYEAR /;"	v	module:dt_mo
+EPOCHYEAR	src/bak/dt_mo_2024-12-16_0836.f90	/^  integer,      parameter :: EPOCHYEAR /;"	v	module:dt_mo
+EPOCHYEAR	src/bak/dt_mo_2024-12-16_0837.f90	/^  integer,      parameter :: EPOCHYEAR /;"	v	module:dt_mo
+EPOCHYEAR	src/dt_mo.f90	/^  integer,      parameter :: EPOCHYEAR /;"	v	module:dt_mo
+LAB_WDAY	src/bak/dt_mo_2024-10-17_1116.f90	/^  character(3), parameter :: LAB_WDAY(/;"	v	module:dt_mo
+LAB_WDAY	src/bak/dt_mo_2024-10-30_2246.f90	/^  character(3), parameter :: LAB_WDAY(/;"	v	module:dt_mo
+LAB_WDAY	src/bak/dt_mo_2024-11-23_1042.f90	/^  character(3), parameter :: LAB_WDAY(/;"	v	module:dt_mo
+LAB_WDAY	src/bak/dt_mo_2024-11-23_1043.f90	/^  character(3), parameter :: LAB_WDAY(/;"	v	module:dt_mo
+LAB_WDAY	src/bak/dt_mo_2024-11-23_1201.f90	/^  character(3), parameter :: LAB_WDAY(/;"	v	module:dt_mo
+LAB_WDAY	src/bak/dt_mo_2024-12-16_0835.f90	/^  character(3), parameter :: LAB_WDAY(/;"	v	module:dt_mo
+LAB_WDAY	src/bak/dt_mo_2024-12-16_0836.f90	/^  character(3), parameter :: LAB_WDAY(/;"	v	module:dt_mo
+LAB_WDAY	src/bak/dt_mo_2024-12-16_0837.f90	/^  character(3), parameter :: LAB_WDAY(/;"	v	module:dt_mo
+LAB_WDAY	src/dt_mo.f90	/^  character(3), parameter :: LAB_WDAY(/;"	v	module:dt_mo
+MKDIR_BUILD	makefile	/^MKDIR_BUILD := mkdir -p build && cd build$/;"	m
+MKFILE	test/makefile	/^MKFILE:=-C .. -f makefile$/;"	m
+count_days	src/bak/dt_mo_2024-10-17_1116.f90	/^  pure elemental integer function count_days /;"	f
+count_days	src/bak/dt_mo_2024-10-30_2246.f90	/^  pure elemental integer function count_days /;"	f
+count_days	src/bak/dt_mo_2024-11-23_1042.f90	/^  pure elemental integer function count_days /;"	f
+count_days	src/bak/dt_mo_2024-11-23_1043.f90	/^  pure elemental integer function count_days /;"	f
+count_days	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure elemental integer function count_days /;"	f
+count_days	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental integer function count_days /;"	f
+count_days	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental integer function count_days /;"	f
+count_days	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental integer function count_days /;"	f
+count_days	src/dt_mo.f90	/^  pure elemental integer function count_days /;"	f
+datetime	test/bak/unit_test_2024-10-17_1118.f90	/^  character(19)              :: datetime$/;"	v	program:unit_test
+datetime	test/bak/unit_test_2024-10-30_2247.f90	/^  character(19)              :: datetime$/;"	v	program:unit_test
+datetime	test/bak/unit_test_2024-12-16_0834.f90	/^  character(19)              :: datetime$/;"	v	program:unit_test
+datetime	test/bak/unit_test_2024-12-16_0835.f90	/^  character(19)              :: datetime$/;"	v	program:unit_test
+datetime	test/unit_test.f90	/^  character(19)              :: datetime$/;"	v	program:unit_test
+datetimes	test/bak/unit_test_2024-10-17_1118.f90	/^  character(19), allocatable :: datetimes(/;"	v	program:unit_test
+datetimes	test/bak/unit_test_2024-10-30_2247.f90	/^  character(19), allocatable :: datetimes(/;"	v	program:unit_test
+datetimes	test/bak/unit_test_2024-12-16_0834.f90	/^  character(19), allocatable :: datetimes(/;"	v	program:unit_test
+datetimes	test/bak/unit_test_2024-12-16_0835.f90	/^  character(19), allocatable :: datetimes(/;"	v	program:unit_test
+datetimes	test/unit_test.f90	/^  character(19), allocatable :: datetimes(/;"	v	program:unit_test
+day_of_the_week	src/bak/dt_mo_2024-10-17_1116.f90	/^  pure elemental integer function day_of_the_week /;"	f
+day_of_the_week	src/bak/dt_mo_2024-10-30_2246.f90	/^  pure elemental integer function day_of_the_week /;"	f
+day_of_the_week	src/bak/dt_mo_2024-11-23_1042.f90	/^  pure elemental integer function day_of_the_week /;"	f
+day_of_the_week	src/bak/dt_mo_2024-11-23_1043.f90	/^  pure elemental integer function day_of_the_week /;"	f
+day_of_the_week	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure elemental integer function day_of_the_week /;"	f
+day_of_the_week	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental integer function day_of_the_week /;"	f
+day_of_the_week	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental integer function day_of_the_week /;"	f
+day_of_the_week	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental integer function day_of_the_week /;"	f
+day_of_the_week	src/dt_mo.f90	/^  pure elemental integer function day_of_the_week /;"	f
+days	src/bak/dt_mo_2024-10-17_1116.f90	/^    integer :: mons, days$/;"	k	type:diff_dt_ty
+days	src/bak/dt_mo_2024-10-30_2246.f90	/^    integer :: mons, days$/;"	k	type:diff_dt_ty
+days	src/bak/dt_mo_2024-11-23_1042.f90	/^    integer :: mons, days$/;"	k	type:diff_dt_ty
+days	src/bak/dt_mo_2024-11-23_1043.f90	/^    integer :: mons, days$/;"	k	type:diff_dt_ty
+days	src/bak/dt_mo_2024-11-23_1201.f90	/^    integer :: mons, days$/;"	k	type:diff_dt_ty
+days	src/bak/dt_mo_2024-12-16_0835.f90	/^    integer :: mons, days$/;"	k	type:diff_dt_ty
+days	src/bak/dt_mo_2024-12-16_0836.f90	/^    integer :: mons, days$/;"	k	type:diff_dt_ty
+days	src/bak/dt_mo_2024-12-16_0837.f90	/^    integer :: mons, days$/;"	k	type:diff_dt_ty
+days	src/dt_mo.f90	/^    integer :: mons, days$/;"	k	type:diff_dt_ty
+diff	src/bak/dt_mo_2024-10-17_1116.f90	/^    integer :: start = 0, end = 0, rate = 0, max = 0, diff /;"	k	type:tm_ty
+diff	src/bak/dt_mo_2024-10-30_2246.f90	/^    integer :: start = 0, end = 0, rate = 0, max = 0, diff /;"	k	type:tm_ty
+diff	src/bak/dt_mo_2024-11-23_1042.f90	/^    integer :: start = 0, end = 0, rate = 0, max = 0, diff /;"	k	type:tm_ty
+diff	src/bak/dt_mo_2024-11-23_1043.f90	/^    integer :: start = 0, end = 0, rate = 0, max = 0, diff /;"	k	type:tm_ty
+diff	src/bak/dt_mo_2024-11-23_1201.f90	/^    integer :: start = 0, end = 0, rate = 0, max = 0, diff /;"	k	type:tm_ty
+diff	src/bak/dt_mo_2024-12-16_0835.f90	/^    integer :: start = 0, end = 0, rate = 0, max = 0, diff /;"	k	type:tm_ty
+diff	src/bak/dt_mo_2024-12-16_0836.f90	/^    integer :: start = 0, end = 0, rate = 0, max = 0, diff /;"	k	type:tm_ty
+diff	src/bak/dt_mo_2024-12-16_0837.f90	/^    integer :: start = 0, end = 0, rate = 0, max = 0, diff /;"	k	type:tm_ty
+diff	src/dt_mo.f90	/^    integer :: start = 0, end = 0, rate = 0, max = 0, diff /;"	k	type:tm_ty
+diff_days	src/bak/dt_mo_2024-10-17_1116.f90	/^  pure elemental function diff_days /;"	f
+diff_days	src/bak/dt_mo_2024-10-30_2246.f90	/^  pure elemental function diff_days /;"	f
+diff_days	src/bak/dt_mo_2024-11-23_1042.f90	/^  pure elemental function diff_days /;"	f
+diff_days	src/bak/dt_mo_2024-11-23_1043.f90	/^  pure elemental function diff_days /;"	f
+diff_days	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure elemental function diff_days /;"	f
+diff_days	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental function diff_days /;"	f
+diff_days	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental function diff_days /;"	f
+diff_days	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental function diff_days /;"	f
+diff_days	src/dt_mo.f90	/^  pure elemental function diff_days /;"	f
+diff_dt	src/bak/dt_mo_2024-10-17_1116.f90	/^  pure elemental function diff_dt /;"	f
+diff_dt	src/bak/dt_mo_2024-10-30_2246.f90	/^  pure elemental function diff_dt /;"	f
+diff_dt	src/bak/dt_mo_2024-11-23_1042.f90	/^  pure elemental function diff_dt /;"	f
+diff_dt	src/bak/dt_mo_2024-11-23_1043.f90	/^  pure elemental function diff_dt /;"	f
+diff_dt	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure elemental function diff_dt /;"	f
+diff_dt	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental function diff_dt /;"	f
+diff_dt	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental function diff_dt /;"	f
+diff_dt	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental function diff_dt /;"	f
+diff_dt	src/dt_mo.f90	/^  pure elemental function diff_dt /;"	f
+diff_dt_ty	src/bak/dt_mo_2024-10-17_1116.f90	/^  type diff_dt_ty$/;"	t
+diff_dt_ty	src/bak/dt_mo_2024-10-30_2246.f90	/^  type diff_dt_ty$/;"	t
+diff_dt_ty	src/bak/dt_mo_2024-11-23_1042.f90	/^  type diff_dt_ty$/;"	t
+diff_dt_ty	src/bak/dt_mo_2024-11-23_1043.f90	/^  type diff_dt_ty$/;"	t
+diff_dt_ty	src/bak/dt_mo_2024-11-23_1201.f90	/^  type diff_dt_ty$/;"	t
+diff_dt_ty	src/bak/dt_mo_2024-12-16_0835.f90	/^  type diff_dt_ty$/;"	t
+diff_dt_ty	src/bak/dt_mo_2024-12-16_0836.f90	/^  type diff_dt_ty$/;"	t
+diff_dt_ty	src/bak/dt_mo_2024-12-16_0837.f90	/^  type diff_dt_ty$/;"	t
+diff_dt_ty	src/dt_mo.f90	/^  type diff_dt_ty$/;"	t
+diff_hrs	src/bak/dt_mo_2024-10-17_1116.f90	/^  pure elemental function diff_hrs /;"	f
+diff_hrs	src/bak/dt_mo_2024-10-30_2246.f90	/^  pure elemental function diff_hrs /;"	f
+diff_hrs	src/bak/dt_mo_2024-11-23_1042.f90	/^  pure elemental function diff_hrs /;"	f
+diff_hrs	src/bak/dt_mo_2024-11-23_1043.f90	/^  pure elemental function diff_hrs /;"	f
+diff_hrs	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure elemental function diff_hrs /;"	f
+diff_hrs	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental function diff_hrs /;"	f
+diff_hrs	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental function diff_hrs /;"	f
+diff_hrs	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental function diff_hrs /;"	f
+diff_hrs	src/dt_mo.f90	/^  pure elemental function diff_hrs /;"	f
+diff_mins	src/bak/dt_mo_2024-10-17_1116.f90	/^  pure elemental function diff_mins /;"	f
+diff_mins	src/bak/dt_mo_2024-10-30_2246.f90	/^  pure elemental function diff_mins /;"	f
+diff_mins	src/bak/dt_mo_2024-11-23_1042.f90	/^  pure elemental function diff_mins /;"	f
+diff_mins	src/bak/dt_mo_2024-11-23_1043.f90	/^  pure elemental function diff_mins /;"	f
+diff_mins	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure elemental function diff_mins /;"	f
+diff_mins	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental function diff_mins /;"	f
+diff_mins	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental function diff_mins /;"	f
+diff_mins	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental function diff_mins /;"	f
+diff_mins	src/dt_mo.f90	/^  pure elemental function diff_mins /;"	f
+diff_secs	src/bak/dt_mo_2024-10-17_1116.f90	/^  pure elemental integer function diff_secs /;"	f
+diff_secs	src/bak/dt_mo_2024-10-30_2246.f90	/^  pure elemental integer function diff_secs /;"	f
+diff_secs	src/bak/dt_mo_2024-11-23_1042.f90	/^  pure elemental integer function diff_secs /;"	f
+diff_secs	src/bak/dt_mo_2024-11-23_1043.f90	/^  pure elemental integer function diff_secs /;"	f
+diff_secs	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure elemental integer function diff_secs /;"	f
+diff_secs	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental integer function diff_secs /;"	f
+diff_secs	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental integer function diff_secs /;"	f
+diff_secs	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental integer function diff_secs /;"	f
+diff_secs	src/dt_mo.f90	/^  pure elemental integer function diff_secs /;"	f
+dt	test/bak/unit_test_2024-10-17_1118.f90	/^  type(dt_/;"	v	program:unit_test
+dt	test/bak/unit_test_2024-10-30_2247.f90	/^  type(dt_/;"	v	program:unit_test
+dt	test/bak/unit_test_2024-12-16_0834.f90	/^  type(dt_/;"	v	program:unit_test
+dt	test/bak/unit_test_2024-12-16_0835.f90	/^  type(dt_/;"	v	program:unit_test
+dt	test/unit_test.f90	/^  type(dt_/;"	v	program:unit_test
+dt_mo	src/bak/dt_mo_2024-10-17_1116.f90	/^module dt_mo$/;"	m
+dt_mo	src/bak/dt_mo_2024-10-30_2246.f90	/^module dt_mo$/;"	m
+dt_mo	src/bak/dt_mo_2024-11-23_1042.f90	/^module dt_mo$/;"	m
+dt_mo	src/bak/dt_mo_2024-11-23_1043.f90	/^module dt_mo$/;"	m
+dt_mo	src/bak/dt_mo_2024-11-23_1201.f90	/^module dt_mo$/;"	m
+dt_mo	src/bak/dt_mo_2024-12-16_0835.f90	/^module dt_mo$/;"	m
+dt_mo	src/bak/dt_mo_2024-12-16_0836.f90	/^module dt_mo$/;"	m
+dt_mo	src/bak/dt_mo_2024-12-16_0837.f90	/^module dt_mo$/;"	m
+dt_mo	src/dt_mo.f90	/^module dt_mo$/;"	m
+dts	test/bak/unit_test_2024-10-17_1118.f90	/^  type(dt_ty),   allocatable :: dts(/;"	v	program:unit_test
+dts	test/bak/unit_test_2024-10-30_2247.f90	/^  type(dt_ty),   allocatable :: dts(/;"	v	program:unit_test
+dts	test/bak/unit_test_2024-12-16_0834.f90	/^  type(dt_ty),   allocatable :: dts(/;"	v	program:unit_test
+dts	test/bak/unit_test_2024-12-16_0835.f90	/^  type(dt_ty),   allocatable :: dts(/;"	v	program:unit_test
+dts	test/unit_test.f90	/^  type(dt_ty),   allocatable :: dts(/;"	v	program:unit_test
+dts_hours	test/bak/unit_test_2024-10-17_1118.f90	/^  type(dt_ty),   allocatable :: dts(:), dts_hours(/;"	v	program:unit_test
+dts_hours	test/bak/unit_test_2024-10-30_2247.f90	/^  type(dt_ty),   allocatable :: dts(:), dts_hours(/;"	v	program:unit_test
+dts_hours	test/bak/unit_test_2024-12-16_0834.f90	/^  type(dt_ty),   allocatable :: dts(:), dts_hours(/;"	v	program:unit_test
+dts_hours	test/bak/unit_test_2024-12-16_0835.f90	/^  type(dt_ty),   allocatable :: dts(:), dts_hours(/;"	v	program:unit_test
+dts_hours	test/unit_test.f90	/^  type(dt_ty),   allocatable :: dts(:), dts_hours(/;"	v	program:unit_test
+end	src/bak/dt_mo_2024-10-17_1116.f90	/^    integer :: start = 0, end /;"	k	type:tm_ty
+end	src/bak/dt_mo_2024-10-30_2246.f90	/^    integer :: start = 0, end /;"	k	type:tm_ty
+end	src/bak/dt_mo_2024-11-23_1042.f90	/^    integer :: start = 0, end /;"	k	type:tm_ty
+end	src/bak/dt_mo_2024-11-23_1043.f90	/^    integer :: start = 0, end /;"	k	type:tm_ty
+end	src/bak/dt_mo_2024-11-23_1201.f90	/^    integer :: start = 0, end /;"	k	type:tm_ty
+end	src/bak/dt_mo_2024-12-16_0835.f90	/^    integer :: start = 0, end /;"	k	type:tm_ty
+end	src/bak/dt_mo_2024-12-16_0836.f90	/^    integer :: start = 0, end /;"	k	type:tm_ty
+end	src/bak/dt_mo_2024-12-16_0837.f90	/^    integer :: start = 0, end /;"	k	type:tm_ty
+end	src/dt_mo.f90	/^    integer :: start = 0, end /;"	k	type:tm_ty
+get_datetime	src/bak/dt_mo_2024-10-17_1116.f90	/^  pure elemental character(19) function get_datetime /;"	f
+get_datetime	src/bak/dt_mo_2024-10-30_2246.f90	/^  pure elemental character(19) function get_datetime /;"	f
+get_datetime	src/bak/dt_mo_2024-11-23_1042.f90	/^  pure elemental character(19) function get_datetime /;"	f
+get_datetime	src/bak/dt_mo_2024-11-23_1043.f90	/^  pure elemental character(19) function get_datetime /;"	f
+get_datetime	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure elemental character(19) function get_datetime /;"	f
+get_datetime	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental character(19) function get_datetime /;"	f
+get_datetime	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental character(19) function get_datetime /;"	f
+get_datetime	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental character(19) function get_datetime /;"	f
+get_datetime	src/dt_mo.f90	/^  pure elemental character(19) function get_datetime /;"	f
+get_pos_rec	src/bak/dt_mo_2024-10-17_1116.f90	/^  pure elemental integer function get_pos_rec /;"	f
+get_pos_rec	src/bak/dt_mo_2024-10-30_2246.f90	/^  pure elemental integer function get_pos_rec /;"	f
+get_pos_rec	src/bak/dt_mo_2024-11-23_1042.f90	/^  pure elemental integer function get_pos_rec /;"	f
+get_pos_rec	src/bak/dt_mo_2024-11-23_1043.f90	/^  pure elemental integer function get_pos_rec /;"	f
+get_pos_rec	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure elemental integer function get_pos_rec /;"	f
+get_pos_rec	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental integer function get_pos_rec /;"	f
+get_pos_rec	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental integer function get_pos_rec /;"	f
+get_pos_rec	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental integer function get_pos_rec /;"	f
+get_pos_rec	src/dt_mo.f90	/^  pure elemental integer function get_pos_rec /;"	f
+get_rec_date	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure elemental integer function get_rec_date /;"	f
+get_rec_date	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental integer function get_rec_date /;"	f
+get_rec_date	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental integer function get_rec_date /;"	f
+get_rec_date	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental integer function get_rec_date /;"	f
+get_rec_date	src/dt_mo.f90	/^  pure elemental integer function get_rec_date /;"	f
+hrs	src/bak/dt_mo_2024-10-17_1116.f90	/^    integer :: hrs,/;"	k	type:diff_dt_ty
+hrs	src/bak/dt_mo_2024-10-30_2246.f90	/^    integer :: hrs,/;"	k	type:diff_dt_ty
+hrs	src/bak/dt_mo_2024-11-23_1042.f90	/^    integer :: hrs,/;"	k	type:diff_dt_ty
+hrs	src/bak/dt_mo_2024-11-23_1043.f90	/^    integer :: hrs,/;"	k	type:diff_dt_ty
+hrs	src/bak/dt_mo_2024-11-23_1201.f90	/^    integer :: hrs,/;"	k	type:diff_dt_ty
+hrs	src/bak/dt_mo_2024-12-16_0835.f90	/^    integer :: hrs,/;"	k	type:diff_dt_ty
+hrs	src/bak/dt_mo_2024-12-16_0836.f90	/^    integer :: hrs,/;"	k	type:diff_dt_ty
+hrs	src/bak/dt_mo_2024-12-16_0837.f90	/^    integer :: hrs,/;"	k	type:diff_dt_ty
+hrs	src/dt_mo.f90	/^    integer :: hrs,/;"	k	type:diff_dt_ty
+i	test/bak/unit_test_2024-10-17_1118.f90	/^  in/;"	v	program:unit_test
+i	test/bak/unit_test_2024-10-30_2247.f90	/^  in/;"	v	program:unit_test
+i	test/bak/unit_test_2024-12-16_0834.f90	/^  in/;"	v	program:unit_test
+i	test/bak/unit_test_2024-12-16_0835.f90	/^  in/;"	v	program:unit_test
+i	test/unit_test.f90	/^  in/;"	v	program:unit_test
+is_leap_yr	src/bak/dt_mo_2024-10-17_1116.f90	/^  pure elemental logical function is_leap_yr /;"	f
+is_leap_yr	src/bak/dt_mo_2024-10-30_2246.f90	/^  pure elemental logical function is_leap_yr /;"	f
+is_leap_yr	src/bak/dt_mo_2024-11-23_1042.f90	/^  pure elemental logical function is_leap_yr /;"	f
+is_leap_yr	src/bak/dt_mo_2024-11-23_1043.f90	/^  pure elemental logical function is_leap_yr /;"	f
+is_leap_yr	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure elemental logical function is_leap_yr /;"	f
+is_leap_yr	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental logical function is_leap_yr /;"	f
+is_leap_yr	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental logical function is_leap_yr /;"	f
+is_leap_yr	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental logical function is_leap_yr /;"	f
+is_leap_yr	src/dt_mo.f90	/^  pure elemental logical function is_leap_yr /;"	f
+leap_yr	src/bak/dt_mo_2024-10-17_1116.f90	/^  pure elemental integer function leap_yr /;"	f
+leap_yr	src/bak/dt_mo_2024-10-30_2246.f90	/^  pure elemental integer function leap_yr /;"	f
+leap_yr	src/bak/dt_mo_2024-11-23_1042.f90	/^  pure elemental integer function leap_yr /;"	f
+leap_yr	src/bak/dt_mo_2024-11-23_1043.f90	/^  pure elemental integer function leap_yr /;"	f
+leap_yr	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure elemental integer function leap_yr /;"	f
+leap_yr	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental integer function leap_yr /;"	f
+leap_yr	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental integer function leap_yr /;"	f
+leap_yr	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental integer function leap_yr /;"	f
+leap_yr	src/dt_mo.f90	/^  pure elemental integer function leap_yr /;"	f
+max	src/bak/dt_mo_2024-10-17_1116.f90	/^    integer :: start = 0, end = 0, rate = 0, max /;"	k	type:tm_ty
+max	src/bak/dt_mo_2024-10-30_2246.f90	/^    integer :: start = 0, end = 0, rate = 0, max /;"	k	type:tm_ty
+max	src/bak/dt_mo_2024-11-23_1042.f90	/^    integer :: start = 0, end = 0, rate = 0, max /;"	k	type:tm_ty
+max	src/bak/dt_mo_2024-11-23_1043.f90	/^    integer :: start = 0, end = 0, rate = 0, max /;"	k	type:tm_ty
+max	src/bak/dt_mo_2024-11-23_1201.f90	/^    integer :: start = 0, end = 0, rate = 0, max /;"	k	type:tm_ty
+max	src/bak/dt_mo_2024-12-16_0835.f90	/^    integer :: start = 0, end = 0, rate = 0, max /;"	k	type:tm_ty
+max	src/bak/dt_mo_2024-12-16_0836.f90	/^    integer :: start = 0, end = 0, rate = 0, max /;"	k	type:tm_ty
+max	src/bak/dt_mo_2024-12-16_0837.f90	/^    integer :: start = 0, end = 0, rate = 0, max /;"	k	type:tm_ty
+max	src/dt_mo.f90	/^    integer :: start = 0, end = 0, rate = 0, max /;"	k	type:tm_ty
+mins	src/bak/dt_mo_2024-10-17_1116.f90	/^    integer :: hrs, mins,/;"	k	type:diff_dt_ty
+mins	src/bak/dt_mo_2024-10-30_2246.f90	/^    integer :: hrs, mins,/;"	k	type:diff_dt_ty
+mins	src/bak/dt_mo_2024-11-23_1042.f90	/^    integer :: hrs, mins,/;"	k	type:diff_dt_ty
+mins	src/bak/dt_mo_2024-11-23_1043.f90	/^    integer :: hrs, mins,/;"	k	type:diff_dt_ty
+mins	src/bak/dt_mo_2024-11-23_1201.f90	/^    integer :: hrs, mins,/;"	k	type:diff_dt_ty
+mins	src/bak/dt_mo_2024-12-16_0835.f90	/^    integer :: hrs, mins,/;"	k	type:diff_dt_ty
+mins	src/bak/dt_mo_2024-12-16_0836.f90	/^    integer :: hrs, mins,/;"	k	type:diff_dt_ty
+mins	src/bak/dt_mo_2024-12-16_0837.f90	/^    integer :: hrs, mins,/;"	k	type:diff_dt_ty
+mins	src/dt_mo.f90	/^    integer :: hrs, mins,/;"	k	type:diff_dt_ty
+minus_days	src/bak/dt_mo_2024-10-17_1116.f90	/^  pure elemental function minus_days /;"	f
+minus_days	src/bak/dt_mo_2024-10-30_2246.f90	/^  pure elemental function minus_days /;"	f
+minus_days	src/bak/dt_mo_2024-11-23_1042.f90	/^  pure elemental function minus_days /;"	f
+minus_days	src/bak/dt_mo_2024-11-23_1043.f90	/^  pure elemental function minus_days /;"	f
+minus_days	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure elemental function minus_days /;"	f
+minus_days	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental function minus_days /;"	f
+minus_days	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental function minus_days /;"	f
+minus_days	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental function minus_days /;"	f
+minus_days	src/dt_mo.f90	/^  pure elemental function minus_days /;"	f
+minus_dt	src/bak/dt_mo_2024-10-17_1116.f90	/^  pure elemental function minus_dt /;"	f
+minus_dt	src/bak/dt_mo_2024-10-30_2246.f90	/^  pure elemental function minus_dt /;"	f
+minus_dt	src/bak/dt_mo_2024-11-23_1042.f90	/^  pure elemental function minus_dt /;"	f
+minus_dt	src/bak/dt_mo_2024-11-23_1043.f90	/^  pure elemental function minus_dt /;"	f
+minus_dt	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure elemental function minus_dt /;"	f
+minus_dt	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental function minus_dt /;"	f
+minus_dt	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental function minus_dt /;"	f
+minus_dt	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental function minus_dt /;"	f
+minus_dt	src/dt_mo.f90	/^  pure elemental function minus_dt /;"	f
+minus_hrs	src/bak/dt_mo_2024-10-17_1116.f90	/^  pure elemental function minus_hrs /;"	f
+minus_hrs	src/bak/dt_mo_2024-10-30_2246.f90	/^  pure elemental function minus_hrs /;"	f
+minus_hrs	src/bak/dt_mo_2024-11-23_1042.f90	/^  pure elemental function minus_hrs /;"	f
+minus_hrs	src/bak/dt_mo_2024-11-23_1043.f90	/^  pure elemental function minus_hrs /;"	f
+minus_hrs	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure elemental function minus_hrs /;"	f
+minus_hrs	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental function minus_hrs /;"	f
+minus_hrs	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental function minus_hrs /;"	f
+minus_hrs	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental function minus_hrs /;"	f
+minus_hrs	src/dt_mo.f90	/^  pure elemental function minus_hrs /;"	f
+minus_mins	src/bak/dt_mo_2024-10-17_1116.f90	/^  pure elemental function minus_mins /;"	f
+minus_mins	src/bak/dt_mo_2024-10-30_2246.f90	/^  pure elemental function minus_mins /;"	f
+minus_mins	src/bak/dt_mo_2024-11-23_1042.f90	/^  pure elemental function minus_mins /;"	f
+minus_mins	src/bak/dt_mo_2024-11-23_1043.f90	/^  pure elemental function minus_mins /;"	f
+minus_mins	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure elemental function minus_mins /;"	f
+minus_mins	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental function minus_mins /;"	f
+minus_mins	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental function minus_mins /;"	f
+minus_mins	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental function minus_mins /;"	f
+minus_mins	src/dt_mo.f90	/^  pure elemental function minus_mins /;"	f
+minus_secs	src/bak/dt_mo_2024-10-17_1116.f90	/^  pure elemental function minus_secs /;"	f
+minus_secs	src/bak/dt_mo_2024-10-30_2246.f90	/^  pure elemental function minus_secs /;"	f
+minus_secs	src/bak/dt_mo_2024-11-23_1042.f90	/^  pure elemental function minus_secs /;"	f
+minus_secs	src/bak/dt_mo_2024-11-23_1043.f90	/^  pure elemental function minus_secs /;"	f
+minus_secs	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure elemental function minus_secs /;"	f
+minus_secs	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental function minus_secs /;"	f
+minus_secs	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental function minus_secs /;"	f
+minus_secs	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental function minus_secs /;"	f
+minus_secs	src/dt_mo.f90	/^  pure elemental function minus_secs /;"	f
+mons	src/bak/dt_mo_2024-10-17_1116.f90	/^    integer :: mons,/;"	k	type:diff_dt_ty
+mons	src/bak/dt_mo_2024-10-30_2246.f90	/^    integer :: mons,/;"	k	type:diff_dt_ty
+mons	src/bak/dt_mo_2024-11-23_1042.f90	/^    integer :: mons,/;"	k	type:diff_dt_ty
+mons	src/bak/dt_mo_2024-11-23_1043.f90	/^    integer :: mons,/;"	k	type:diff_dt_ty
+mons	src/bak/dt_mo_2024-11-23_1201.f90	/^    integer :: mons,/;"	k	type:diff_dt_ty
+mons	src/bak/dt_mo_2024-12-16_0835.f90	/^    integer :: mons,/;"	k	type:diff_dt_ty
+mons	src/bak/dt_mo_2024-12-16_0836.f90	/^    integer :: mons,/;"	k	type:diff_dt_ty
+mons	src/bak/dt_mo_2024-12-16_0837.f90	/^    integer :: mons,/;"	k	type:diff_dt_ty
+mons	src/dt_mo.f90	/^    integer :: mons,/;"	k	type:diff_dt_ty
+msg	src/bak/dt_mo_2024-10-17_1116.f90	/^    character(255) :: msg$/;"	k	type:tm_ty
+msg	src/bak/dt_mo_2024-10-30_2246.f90	/^    character(255) :: msg$/;"	k	type:tm_ty
+msg	src/bak/dt_mo_2024-11-23_1042.f90	/^    character(255) :: msg$/;"	k	type:tm_ty
+msg	src/bak/dt_mo_2024-11-23_1043.f90	/^    character(255) :: msg$/;"	k	type:tm_ty
+msg	src/bak/dt_mo_2024-11-23_1201.f90	/^    character(255) :: msg$/;"	k	type:tm_ty
+msg	src/bak/dt_mo_2024-12-16_0835.f90	/^    character(255) :: msg$/;"	k	type:tm_ty
+msg	src/bak/dt_mo_2024-12-16_0836.f90	/^    character(255) :: msg$/;"	k	type:tm_ty
+msg	src/bak/dt_mo_2024-12-16_0837.f90	/^    character(255) :: msg$/;"	k	type:tm_ty
+msg	src/dt_mo.f90	/^    character(255) :: msg$/;"	k	type:tm_ty
+n	test/bak/unit_test_2024-10-17_1118.f90	/^  int/;"	v	program:unit_test
+n	test/bak/unit_test_2024-10-30_2247.f90	/^  int/;"	v	program:unit_test
+n	test/bak/unit_test_2024-12-16_0834.f90	/^  int/;"	v	program:unit_test
+n	test/bak/unit_test_2024-12-16_0835.f90	/^  int/;"	v	program:unit_test
+n	test/unit_test.f90	/^  int/;"	v	program:unit_test
+ndays_mon	src/bak/dt_mo_2024-10-17_1116.f90	/^  pure elemental integer function ndays_mon /;"	f
+ndays_mon	src/bak/dt_mo_2024-10-30_2246.f90	/^  pure elemental integer function ndays_mon /;"	f
+ndays_mon	src/bak/dt_mo_2024-11-23_1042.f90	/^  pure elemental integer function ndays_mon /;"	f
+ndays_mon	src/bak/dt_mo_2024-11-23_1043.f90	/^  pure elemental integer function ndays_mon /;"	f
+ndays_mon	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure elemental integer function ndays_mon /;"	f
+ndays_mon	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental integer function ndays_mon /;"	f
+ndays_mon	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental integer function ndays_mon /;"	f
+ndays_mon	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental integer function ndays_mon /;"	f
+ndays_mon	src/dt_mo.f90	/^  pure elemental integer function ndays_mon /;"	f
+plus_days	src/bak/dt_mo_2024-10-17_1116.f90	/^  pure elemental function plus_days /;"	f
+plus_days	src/bak/dt_mo_2024-10-30_2246.f90	/^  pure elemental function plus_days /;"	f
+plus_days	src/bak/dt_mo_2024-11-23_1042.f90	/^  pure elemental function plus_days /;"	f
+plus_days	src/bak/dt_mo_2024-11-23_1043.f90	/^  pure elemental function plus_days /;"	f
+plus_days	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure elemental function plus_days /;"	f
+plus_days	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental function plus_days /;"	f
+plus_days	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental function plus_days /;"	f
+plus_days	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental function plus_days /;"	f
+plus_days	src/dt_mo.f90	/^  pure elemental function plus_days /;"	f
+plus_dt	src/bak/dt_mo_2024-10-17_1116.f90	/^  pure elemental function plus_dt /;"	f
+plus_dt	src/bak/dt_mo_2024-10-30_2246.f90	/^  pure elemental function plus_dt /;"	f
+plus_dt	src/bak/dt_mo_2024-11-23_1042.f90	/^  pure elemental function plus_dt /;"	f
+plus_dt	src/bak/dt_mo_2024-11-23_1043.f90	/^  pure elemental function plus_dt /;"	f
+plus_dt	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure elemental function plus_dt /;"	f
+plus_dt	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental function plus_dt /;"	f
+plus_dt	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental function plus_dt /;"	f
+plus_dt	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental function plus_dt /;"	f
+plus_dt	src/dt_mo.f90	/^  pure elemental function plus_dt /;"	f
+plus_hrs	src/bak/dt_mo_2024-10-17_1116.f90	/^  pure elemental function plus_hrs /;"	f
+plus_hrs	src/bak/dt_mo_2024-10-30_2246.f90	/^  pure elemental function plus_hrs /;"	f
+plus_hrs	src/bak/dt_mo_2024-11-23_1042.f90	/^  pure elemental function plus_hrs /;"	f
+plus_hrs	src/bak/dt_mo_2024-11-23_1043.f90	/^  pure elemental function plus_hrs /;"	f
+plus_hrs	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure elemental function plus_hrs /;"	f
+plus_hrs	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental function plus_hrs /;"	f
+plus_hrs	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental function plus_hrs /;"	f
+plus_hrs	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental function plus_hrs /;"	f
+plus_hrs	src/dt_mo.f90	/^  pure elemental function plus_hrs /;"	f
+plus_mins	src/bak/dt_mo_2024-10-17_1116.f90	/^  pure elemental function plus_mins /;"	f
+plus_mins	src/bak/dt_mo_2024-10-30_2246.f90	/^  pure elemental function plus_mins /;"	f
+plus_mins	src/bak/dt_mo_2024-11-23_1042.f90	/^  pure elemental function plus_mins /;"	f
+plus_mins	src/bak/dt_mo_2024-11-23_1043.f90	/^  pure elemental function plus_mins /;"	f
+plus_mins	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure elemental function plus_mins /;"	f
+plus_mins	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental function plus_mins /;"	f
+plus_mins	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental function plus_mins /;"	f
+plus_mins	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental function plus_mins /;"	f
+plus_mins	src/dt_mo.f90	/^  pure elemental function plus_mins /;"	f
+plus_secs	src/bak/dt_mo_2024-10-17_1116.f90	/^  pure elemental function plus_secs /;"	f
+plus_secs	src/bak/dt_mo_2024-10-30_2246.f90	/^  pure elemental function plus_secs /;"	f
+plus_secs	src/bak/dt_mo_2024-11-23_1042.f90	/^  pure elemental function plus_secs /;"	f
+plus_secs	src/bak/dt_mo_2024-11-23_1043.f90	/^  pure elemental function plus_secs /;"	f
+plus_secs	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure elemental function plus_secs /;"	f
+plus_secs	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental function plus_secs /;"	f
+plus_secs	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental function plus_secs /;"	f
+plus_secs	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental function plus_secs /;"	f
+plus_secs	src/dt_mo.f90	/^  pure elemental function plus_secs /;"	f
+pos	test/bak/unit_test_2024-10-17_1118.f90	/^  integer                    :: i, u, n, pos$/;"	v	program:unit_test
+pos	test/bak/unit_test_2024-10-30_2247.f90	/^  integer                    :: i, u, n, pos$/;"	v	program:unit_test
+pos	test/bak/unit_test_2024-12-16_0834.f90	/^  integer                    :: i, u, n, pos$/;"	v	program:unit_test
+pos	test/bak/unit_test_2024-12-16_0835.f90	/^  integer                    :: i, u, n, pos$/;"	v	program:unit_test
+pos	test/unit_test.f90	/^  integer                    :: i, u, n, pos$/;"	v	program:unit_test
+poss	test/bak/unit_test_2024-10-17_1118.f90	/^  integer, allocatable       :: poss(/;"	v	program:unit_test
+poss	test/bak/unit_test_2024-10-30_2247.f90	/^  integer, allocatable       :: poss(/;"	v	program:unit_test
+poss	test/bak/unit_test_2024-12-16_0834.f90	/^  integer, allocatable       :: poss(/;"	v	program:unit_test
+poss	test/bak/unit_test_2024-12-16_0835.f90	/^  integer, allocatable       :: poss(/;"	v	program:unit_test
+poss	test/unit_test.f90	/^  integer, allocatable       :: poss(/;"	v	program:unit_test
+print_dts	src/bak/dt_mo_2024-10-17_1116.f90	/^  subroutine print_dts /;"	s
+print_dts	src/bak/dt_mo_2024-10-30_2246.f90	/^  subroutine print_dts /;"	s
+print_dts	src/bak/dt_mo_2024-11-23_1042.f90	/^  subroutine print_dts /;"	s
+print_dts	src/bak/dt_mo_2024-11-23_1043.f90	/^  subroutine print_dts /;"	s
+print_dts	src/bak/dt_mo_2024-11-23_1201.f90	/^  subroutine print_dts /;"	s
+print_dts	src/bak/dt_mo_2024-12-16_0835.f90	/^  subroutine print_dts /;"	s
+print_dts	src/bak/dt_mo_2024-12-16_0836.f90	/^  subroutine print_dts /;"	s
+print_dts	src/bak/dt_mo_2024-12-16_0837.f90	/^  subroutine print_dts /;"	s
+print_dts	src/dt_mo.f90	/^  subroutine print_dts /;"	s
+rate	src/bak/dt_mo_2024-10-17_1116.f90	/^    integer :: start = 0, end = 0, rate /;"	k	type:tm_ty
+rate	src/bak/dt_mo_2024-10-30_2246.f90	/^    integer :: start = 0, end = 0, rate /;"	k	type:tm_ty
+rate	src/bak/dt_mo_2024-11-23_1042.f90	/^    integer :: start = 0, end = 0, rate /;"	k	type:tm_ty
+rate	src/bak/dt_mo_2024-11-23_1043.f90	/^    integer :: start = 0, end = 0, rate /;"	k	type:tm_ty
+rate	src/bak/dt_mo_2024-11-23_1201.f90	/^    integer :: start = 0, end = 0, rate /;"	k	type:tm_ty
+rate	src/bak/dt_mo_2024-12-16_0835.f90	/^    integer :: start = 0, end = 0, rate /;"	k	type:tm_ty
+rate	src/bak/dt_mo_2024-12-16_0836.f90	/^    integer :: start = 0, end = 0, rate /;"	k	type:tm_ty
+rate	src/bak/dt_mo_2024-12-16_0837.f90	/^    integer :: start = 0, end = 0, rate /;"	k	type:tm_ty
+rate	src/dt_mo.f90	/^    integer :: start = 0, end = 0, rate /;"	k	type:tm_ty
+secs	src/bak/dt_mo_2024-10-17_1116.f90	/^    integer :: hrs, mins, secs$/;"	k	type:diff_dt_ty
+secs	src/bak/dt_mo_2024-10-30_2246.f90	/^    integer :: hrs, mins, secs$/;"	k	type:diff_dt_ty
+secs	src/bak/dt_mo_2024-11-23_1042.f90	/^    integer :: hrs, mins, secs$/;"	k	type:diff_dt_ty
+secs	src/bak/dt_mo_2024-11-23_1043.f90	/^    integer :: hrs, mins, secs$/;"	k	type:diff_dt_ty
+secs	src/bak/dt_mo_2024-11-23_1201.f90	/^    integer :: hrs, mins, secs$/;"	k	type:diff_dt_ty
+secs	src/bak/dt_mo_2024-12-16_0835.f90	/^    integer :: hrs, mins, secs$/;"	k	type:diff_dt_ty
+secs	src/bak/dt_mo_2024-12-16_0836.f90	/^    integer :: hrs, mins, secs$/;"	k	type:diff_dt_ty
+secs	src/bak/dt_mo_2024-12-16_0837.f90	/^    integer :: hrs, mins, secs$/;"	k	type:diff_dt_ty
+secs	src/dt_mo.f90	/^    integer :: hrs, mins, secs$/;"	k	type:diff_dt_ty
+seq_dt	src/bak/dt_mo_2024-10-17_1116.f90	/^  pure function seq_dt /;"	f
+seq_dt	src/bak/dt_mo_2024-10-30_2246.f90	/^  pure function seq_dt /;"	f
+seq_dt	src/bak/dt_mo_2024-11-23_1042.f90	/^  pure function seq_dt /;"	f
+seq_dt	src/bak/dt_mo_2024-11-23_1043.f90	/^  pure function seq_dt /;"	f
+seq_dt	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure function seq_dt /;"	f
+seq_dt	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure function seq_dt /;"	f
+seq_dt	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure function seq_dt /;"	f
+seq_dt	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure function seq_dt /;"	f
+seq_dt	src/dt_mo.f90	/^  pure function seq_dt /;"	f
+set_now	src/bak/dt_mo_2024-10-17_1116.f90	/^  type(dt_ty) function set_now /;"	f
+set_now	src/bak/dt_mo_2024-10-30_2246.f90	/^  type(dt_ty) function set_now /;"	f
+set_now	src/bak/dt_mo_2024-11-23_1042.f90	/^  type(dt_ty) function set_now /;"	f
+set_now	src/bak/dt_mo_2024-11-23_1043.f90	/^  type(dt_ty) function set_now /;"	f
+set_now	src/bak/dt_mo_2024-11-23_1201.f90	/^  type(dt_ty) function set_now /;"	f
+set_now	src/bak/dt_mo_2024-12-16_0835.f90	/^  type(dt_ty) function set_now /;"	f
+set_now	src/bak/dt_mo_2024-12-16_0836.f90	/^  type(dt_ty) function set_now /;"	f
+set_now	src/bak/dt_mo_2024-12-16_0837.f90	/^  type(dt_ty) function set_now /;"	f
+set_now	src/dt_mo.f90	/^  type(dt_ty) function set_now /;"	f
+start	src/bak/dt_mo_2024-10-17_1116.f90	/^    integer :: start /;"	k	type:tm_ty
+start	src/bak/dt_mo_2024-10-30_2246.f90	/^    integer :: start /;"	k	type:tm_ty
+start	src/bak/dt_mo_2024-11-23_1042.f90	/^    integer :: start /;"	k	type:tm_ty
+start	src/bak/dt_mo_2024-11-23_1043.f90	/^    integer :: start /;"	k	type:tm_ty
+start	src/bak/dt_mo_2024-11-23_1201.f90	/^    integer :: start /;"	k	type:tm_ty
+start	src/bak/dt_mo_2024-12-16_0835.f90	/^    integer :: start /;"	k	type:tm_ty
+start	src/bak/dt_mo_2024-12-16_0836.f90	/^    integer :: start /;"	k	type:tm_ty
+start	src/bak/dt_mo_2024-12-16_0837.f90	/^    integer :: start /;"	k	type:tm_ty
+start	src/dt_mo.f90	/^    integer :: start /;"	k	type:tm_ty
+strftime	src/bak/dt_mo_2024-10-17_1116.f90	/^  pure elemental function strftime /;"	f
+strftime	src/bak/dt_mo_2024-10-30_2246.f90	/^  pure elemental function strftime /;"	f
+strftime	src/bak/dt_mo_2024-11-23_1042.f90	/^  pure elemental function strftime /;"	f
+strftime	src/bak/dt_mo_2024-11-23_1043.f90	/^  pure elemental function strftime /;"	f
+strftime	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure elemental function strftime /;"	f
+strftime	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental function strftime /;"	f
+strftime	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental function strftime /;"	f
+strftime	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental function strftime /;"	f
+strftime	src/dt_mo.f90	/^  pure elemental function strftime /;"	f
+strptime	src/bak/dt_mo_2024-10-17_1116.f90	/^  pure elemental function strptime /;"	f
+strptime	src/bak/dt_mo_2024-10-30_2246.f90	/^  pure elemental function strptime /;"	f
+strptime	src/bak/dt_mo_2024-11-23_1042.f90	/^  pure elemental function strptime /;"	f
+strptime	src/bak/dt_mo_2024-11-23_1043.f90	/^  pure elemental function strptime /;"	f
+strptime	src/bak/dt_mo_2024-11-23_1201.f90	/^  pure elemental function strptime /;"	f
+strptime	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental function strptime /;"	f
+strptime	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental function strptime /;"	f
+strptime	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental function strptime /;"	f
+strptime	src/dt_mo.f90	/^  pure elemental function strptime /;"	f
+test_diff_dt	test/bak/unit_test_2024-10-17_1118.f90	/^  subroutine test_diff_dt /;"	s	program:unit_test
+test_diff_dt	test/bak/unit_test_2024-10-30_2247.f90	/^  subroutine test_diff_dt /;"	s	program:unit_test
+test_diff_dt	test/bak/unit_test_2024-12-16_0834.f90	/^  subroutine test_diff_dt /;"	s	program:unit_test
+test_diff_dt	test/bak/unit_test_2024-12-16_0835.f90	/^  subroutine test_diff_dt /;"	s	program:unit_test
+test_diff_dt	test/unit_test.f90	/^  subroutine test_diff_dt /;"	s	program:unit_test
+test_seq_dt	test/bak/unit_test_2024-10-17_1118.f90	/^  subroutine test_seq_dt /;"	s	program:unit_test
+test_seq_dt	test/bak/unit_test_2024-10-30_2247.f90	/^  subroutine test_seq_dt /;"	s	program:unit_test
+test_seq_dt	test/bak/unit_test_2024-12-16_0834.f90	/^  subroutine test_seq_dt /;"	s	program:unit_test
+test_seq_dt	test/bak/unit_test_2024-12-16_0835.f90	/^  subroutine test_seq_dt /;"	s	program:unit_test
+test_seq_dt	test/unit_test.f90	/^  subroutine test_seq_dt /;"	s	program:unit_test
+test_seq_dt2	test/bak/unit_test_2024-10-17_1118.f90	/^  subroutine test_seq_dt2 /;"	s	program:unit_test
+test_seq_dt2	test/bak/unit_test_2024-10-30_2247.f90	/^  subroutine test_seq_dt2 /;"	s	program:unit_test
+test_seq_dt2	test/bak/unit_test_2024-12-16_0834.f90	/^  subroutine test_seq_dt2 /;"	s	program:unit_test
+test_seq_dt2	test/bak/unit_test_2024-12-16_0835.f90	/^  subroutine test_seq_dt2 /;"	s	program:unit_test
+test_seq_dt2	test/unit_test.f90	/^  subroutine test_seq_dt2 /;"	s	program:unit_test
+tic	src/bak/dt_mo_2024-10-17_1116.f90	/^  subroutine tic /;"	s
+tic	src/bak/dt_mo_2024-10-30_2246.f90	/^  subroutine tic /;"	s
+tic	src/bak/dt_mo_2024-11-23_1042.f90	/^  subroutine tic /;"	s
+tic	src/bak/dt_mo_2024-11-23_1043.f90	/^  subroutine tic /;"	s
+tic	src/bak/dt_mo_2024-11-23_1201.f90	/^  subroutine tic /;"	s
+tic	src/bak/dt_mo_2024-12-16_0835.f90	/^  subroutine tic /;"	s
+tic	src/bak/dt_mo_2024-12-16_0836.f90	/^  subroutine tic /;"	s
+tic	src/bak/dt_mo_2024-12-16_0837.f90	/^  subroutine tic /;"	s
+tic	src/dt_mo.f90	/^  subroutine tic /;"	s
+tm	test/bak/unit_test_2024-10-17_1118.f90	/^  type(tm_/;"	v	program:unit_test
+tm	test/bak/unit_test_2024-10-30_2247.f90	/^  type(tm_/;"	v	program:unit_test
+tm	test/bak/unit_test_2024-12-16_0834.f90	/^  type(tm_/;"	v	program:unit_test
+tm	test/bak/unit_test_2024-12-16_0835.f90	/^  type(tm_/;"	v	program:unit_test
+tm	test/unit_test.f90	/^  type(tm_/;"	v	program:unit_test
+tm_ty	src/bak/dt_mo_2024-10-17_1116.f90	/^  type tm_ty$/;"	t
+tm_ty	src/bak/dt_mo_2024-10-30_2246.f90	/^  type tm_ty$/;"	t
+tm_ty	src/bak/dt_mo_2024-11-23_1042.f90	/^  type tm_ty$/;"	t
+tm_ty	src/bak/dt_mo_2024-11-23_1043.f90	/^  type tm_ty$/;"	t
+tm_ty	src/bak/dt_mo_2024-11-23_1201.f90	/^  type tm_ty$/;"	t
+tm_ty	src/bak/dt_mo_2024-12-16_0835.f90	/^  type tm_ty$/;"	t
+tm_ty	src/bak/dt_mo_2024-12-16_0836.f90	/^  type tm_ty$/;"	t
+tm_ty	src/bak/dt_mo_2024-12-16_0837.f90	/^  type tm_ty$/;"	t
+tm_ty	src/dt_mo.f90	/^  type tm_ty$/;"	t
+toc	src/bak/dt_mo_2024-10-17_1116.f90	/^  subroutine toc /;"	s
+toc	src/bak/dt_mo_2024-10-30_2246.f90	/^  subroutine toc /;"	s
+toc	src/bak/dt_mo_2024-11-23_1042.f90	/^  subroutine toc /;"	s
+toc	src/bak/dt_mo_2024-11-23_1043.f90	/^  subroutine toc /;"	s
+toc	src/bak/dt_mo_2024-11-23_1201.f90	/^  subroutine toc /;"	s
+toc	src/bak/dt_mo_2024-12-16_0835.f90	/^  subroutine toc /;"	s
+toc	src/bak/dt_mo_2024-12-16_0836.f90	/^  subroutine toc /;"	s
+toc	src/bak/dt_mo_2024-12-16_0837.f90	/^  subroutine toc /;"	s
+toc	src/dt_mo.f90	/^  subroutine toc /;"	s
+u	test/bak/unit_test_2024-10-17_1118.f90	/^  integer                    :: i, u,/;"	v	program:unit_test
+u	test/bak/unit_test_2024-10-30_2247.f90	/^  integer                    :: i, u,/;"	v	program:unit_test
+u	test/bak/unit_test_2024-12-16_0834.f90	/^  integer                    :: i, u,/;"	v	program:unit_test
+u	test/bak/unit_test_2024-12-16_0835.f90	/^  integer                    :: i, u,/;"	v	program:unit_test
+u	test/unit_test.f90	/^  integer                    :: i, u,/;"	v	program:unit_test
+unit_test	test/bak/unit_test_2024-10-17_1118.f90	/^program unit_test$/;"	p
+unit_test	test/bak/unit_test_2024-10-30_2247.f90	/^program unit_test$/;"	p
+unit_test	test/bak/unit_test_2024-12-16_0834.f90	/^program unit_test$/;"	p
+unit_test	test/bak/unit_test_2024-12-16_0835.f90	/^program unit_test$/;"	p
+unit_test	test/unit_test.f90	/^program unit_test$/;"	p
