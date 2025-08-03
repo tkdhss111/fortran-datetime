@@ -68,7 +68,7 @@ contains
     character(10), intent(in) :: date
     type(dt_ty) t
     t = strptime( date, fmt = '%Y-%m-%d' )
-    get_rec_date = count_days ( yr = t%yr, mo = t%mo, dy = t%dy )
+    get_rec_date = count_days( yr = t%yr, mo = t%mo, dy = t%dy )
   end function
 
   pure elemental integer function get_pos_rec ( x, secs0 )
@@ -81,7 +81,7 @@ contains
     integer                       :: ndays, nsecs, secs
     select type ( x )
       type is ( character(*) )
-        dt = strptime ( x )
+        dt = strptime( x )
       type is ( dt_ty )
         dt = x 
     end select
@@ -185,10 +185,10 @@ contains
           dts(i + 1) = plus_secs ( dts(i), step )
         end do
     end select
-    cts = get_datetime ( yr = dts%yr, mo = dts%mo, dy = dts%dy, hr = dts%hr, mi = dts%mi, sc = dts%sc )
+    cts = get_datetime( yr = dts%yr, mo = dts%mo, dy = dts%dy, hr = dts%hr, mi = dts%mi, sc = dts%sc )
     dts = strptime ( cts )
     ! N.B. The following implementation is deprecated (sometimes, tihs causes segmentation fault).
-    !dts = strptime ( get_datetime ( yr = dts%yr, mo = dts%mo, dy = dts%dy, hr = dts%hr, mi = dts%mi, sc = dts%sc ) )
+    !dts = strptime ( get_datetime( yr = dts%yr, mo = dts%mo, dy = dts%dy, hr = dts%hr, mi = dts%mi, sc = dts%sc ) )
   end function
 
   pure elemental character(19) function get_datetime ( yr, mo, dy, hr, mi, sc )
@@ -223,7 +223,7 @@ contains
     character(19)                      :: fmt_
     type(dt_ty)                        :: dt
     integer i_f, i_s
-    if ( present(fmt) ) then
+    if ( present( fmt ) ) then
       fmt_ = trim(fmt)
     else
       fmt_ = '%Y-%m-%d %H:%M:%S'
@@ -378,7 +378,7 @@ contains
     if ( present( hrs  ) ) dtp = plus_hrs  ( dtp, hrs  )
     if ( present( mins ) ) dtp = plus_mins ( dtp, mins )
     if ( present( secs ) ) dtp = plus_secs ( dtp, secs )
-    dtp%datetime = get_datetime ( dtp%yr, dtp%mo, dtp%dy, dtp%hr, dtp%mi, dtp%sc )
+    dtp%datetime = get_datetime( dtp%yr, dtp%mo, dtp%dy, dtp%hr, dtp%mi, dtp%sc )
     dtp = strptime ( dtp%datetime )
   end function
     
@@ -391,10 +391,10 @@ contains
     if ( present( hrs  ) ) dtp = minus_hrs  ( dtp, hrs  )
     if ( present( mins ) ) dtp = minus_mins ( dtp, mins )
     if ( present( secs ) ) dtp = minus_secs ( dtp, secs )
-    dtp%datetime = get_datetime ( dtp%yr, dtp%mo, dtp%dy, dtp%hr, dtp%mi, dtp%sc )
+    dtp%datetime = get_datetime( dtp%yr, dtp%mo, dtp%dy, dtp%hr, dtp%mi, dtp%sc )
     dtp = strptime ( dtp%datetime )
   end function
-    
+
   pure elemental function plus_days ( dt, days ) result ( dtp )
     class(dt_ty), intent(in) :: dt
     type(dt_ty)              :: dtp
