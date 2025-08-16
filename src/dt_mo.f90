@@ -20,6 +20,7 @@ module dt_mo
   public :: count_days
   public :: day_of_the_week
   public :: tm_ty
+  public :: get_timestamp_30min
 
   integer,      parameter :: EPOCHYEAR      = 2000
   character(3), parameter :: LAB_WDAY(7)    = ["Sun", "Mon", "Tue", "Wed", "Thr", "Fri", "Sat"]
@@ -699,5 +700,23 @@ contains
     write ( this%msg, '(a, f10.2, a)' ) "Elapsed time: ", this%diff / real(this%rate), " seconds"
     print*, trim(this%msg)
   end subroutine
+
+  !===================================================
+  ! Utility Tools
+  !
+  function get_timestamp_30min () result ( datetime )
+    integer       :: values(8)
+    character(10) :: date
+    character(8)  :: time
+    character(19) :: datetime
+    call date_and_time( values = values )
+    write ( date, '(i0.2, a1, i0.2, a1, i0.2)' ) values(1), '-', values(2), '-', values(3)
+    write ( time, '(i0.2, a1, i0.2, a1, i0.2)' ) values(5), ':', values(6), ':', values(7)
+    if ( values(6) < 30 ) then
+      datetime = date//' '//time(1:3)//'00:00' ! *:00
+    else
+      datetime = date//' '//time(1:3)//'30:00' ! *:30
+    end if
+  end function
 
 end module

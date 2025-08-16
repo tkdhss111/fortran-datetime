@@ -181,6 +181,7 @@ get_rec_date	src/bak/dt_mo_2024-12-16_0835.f90	/^  pure elemental integer functi
 get_rec_date	src/bak/dt_mo_2024-12-16_0836.f90	/^  pure elemental integer function get_rec_date /;"	f
 get_rec_date	src/bak/dt_mo_2024-12-16_0837.f90	/^  pure elemental integer function get_rec_date /;"	f
 get_rec_date	src/dt_mo.f90	/^  pure elemental integer function get_rec_date /;"	f
+get_timestamp_30min	src/dt_mo.f90	/^  function get_timestamp_30min /;"	f
 hrs	src/bak/dt_mo_2024-10-17_1116.f90	/^    integer :: hrs,/;"	k	type:diff_dt_ty
 hrs	src/bak/dt_mo_2024-10-30_2246.f90	/^    integer :: hrs,/;"	k	type:diff_dt_ty
 hrs	src/bak/dt_mo_2024-11-23_1042.f90	/^    integer :: hrs,/;"	k	type:diff_dt_ty
