@@ -235,6 +235,16 @@ program unit_test
   dts = seq_dt ( strptime ( '2008-06-25 00:00:00' ), strptime ( '2024-09-24 00:00:00' ), by = '1 day' )
   print *, 'size(dts): ', size(dts), ', dts(size(dts))%datetime: ', dts(size(dts))%datetime
 
+  !
+  ! Character field synchronization test (Bug fix verification)
+  !
+  print '(a)', repeat('=', 79)
+  print '(a)', 'Test: Character field synchronization after date arithmetic'
+  print '(a)', 'Check: Integer and character fields must be consistent after plus_days'
+  print '(a)', repeat('=', 79)
+
+  call test_char_field_sync()
+
   call tm%toc()
 
 contains
@@ -308,6 +318,87 @@ contains
     print '(1x, a, i0)', "nsecs: ", nsecs
     print '(1x, a, i0)', 'nunits in seq: ', nsecs / tunit
     print '(a)', ''
+
+  end subroutine
+
+  subroutine test_char_field_sync ()
+    !
+    ! Test that character fields are correctly synchronized with integer fields
+    ! after date arithmetic operations (plus_days, minus_days, etc.)
+    !
+    type(dt_ty)              :: dt_orig, dt_result
+    type(dt_ty), allocatable :: dts(:)
+    integer                  :: i, n_errors
+    character(2)             :: expected_hh, expected_mm, expected_dd
+
+    n_errors = 0
+
+    ! Test 1: plus_days should preserve time and sync character fields
+    print '(a)', ''
+    print '(a)', '--- Test 1: plus_days character field sync ---'
+    dt_orig = strptime( '2026-02-03 00:00:00' )
+    print '(a, a)', 'Original datetime: ', dt_orig%datetime
+    print '(a, a)', 'Original hh: ', dt_orig%hh
+    print '(a, a)', 'Original nn: ', dt_orig%nn
+
+    ! Use seq_dt which internally calls plus_days
+    dts = seq_dt( dt_fr = dt_orig, dt_to = strptime( '2026-02-05 00:00:00' ), by = '1 day' )
+    n = size(dts)
+
+    do i = 1, n
+      print '(a, i0, a, a, a, a, a, a)', 'Day ', i, ': datetime=', dts(i)%datetime, &
+        ', hh=', dts(i)%hh, ', nn=', dts(i)%nn
+
+      ! Check that character hour matches integer hour
+      write(expected_hh, '(i2.2)') dts(i)%hr
+      if ( dts(i)%hh /= expected_hh ) then
+        print '(a)', '  *** ERROR: hh mismatch! expected='//expected_hh//', got='//dts(i)%hh
+        n_errors = n_errors + 1
+      end if
+
+      ! Check that character minute matches integer minute
+      write(expected_mm, '(i2.2)') dts(i)%mi
+      if ( dts(i)%nn /= expected_mm ) then
+        print '(a)', '  *** ERROR: nn mismatch! expected='//expected_mm//', got='//dts(i)%nn
+        n_errors = n_errors + 1
+      end if
+
+      ! Check that character day matches integer day
+      write(expected_dd, '(i2.2)') dts(i)%dy
+      if ( dts(i)%dd /= expected_dd ) then
+        print '(a)', '  *** ERROR: dd mismatch! expected='//expected_dd//', got='//dts(i)%dd
+        n_errors = n_errors + 1
+      end if
+    end do
+
+    ! Test 2: Test with 23:00 start time (the original bug case)
+    print '(a)', ''
+    print '(a)', '--- Test 2: plus_days with 23:00 start time (original bug case) ---'
+    dt_orig = strptime( '2026-02-03 23:00:00' )
+    print '(a, a)', 'Original datetime: ', dt_orig%datetime
+    print '(a, a)', 'Original hh: ', dt_orig%hh
+
+    dts = seq_dt( dt_fr = dt_orig, dt_to = strptime( '2026-02-05 23:00:00' ), by = '1 day' )
+    n = size(dts)
+
+    do i = 1, n
+      print '(a, i0, a, a, a, a)', 'Day ', i, ': datetime=', dts(i)%datetime, ', hh=', dts(i)%hh
+
+      write(expected_hh, '(i2.2)') dts(i)%hr
+      if ( dts(i)%hh /= expected_hh ) then
+        print '(a)', '  *** ERROR: hh mismatch! expected='//expected_hh//', got='//dts(i)%hh
+        n_errors = n_errors + 1
+      end if
+    end do
+
+    ! Summary
+    print '(a)', ''
+    if ( n_errors == 0 ) then
+      print '(a)', '*** All character field sync tests PASSED ***'
+    else
+      print '(a, i0, a)', '*** ', n_errors, ' character field sync tests FAILED ***'
+      error stop 'Character field synchronization test failed'
+    end if
 
   end subroutine
 

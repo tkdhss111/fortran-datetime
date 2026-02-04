@@ -396,6 +396,28 @@ contains
     dtp = strptime ( dtp%datetime )
   end function
 
+  pure elemental subroutine sync_char_fields ( dt )
+    !
+    ! Sync character fields from integer fields after date arithmetic.
+    ! This ensures consistency between integer and character representations.
+    !
+    type(dt_ty), intent(inout) :: dt
+    write( dt%yyyy, '(i4.4)' ) dt%yr
+    write( dt%mm,   '(i2.2)' ) dt%mo
+    write( dt%dd,   '(i2.2)' ) dt%dy
+    write( dt%hh,   '(i2.2)' ) dt%hr
+    write( dt%nn,   '(i2.2)' ) dt%mi
+    write( dt%ss,   '(i2.2)' ) dt%sc
+    dt%yy       = dt%yyyy(3:4)
+    dt%date     = dt%yyyy//"-"//dt%mm//"-"//dt%dd
+    dt%time     = dt%hh//":"//dt%nn//":"//dt%ss
+    dt%datetime = dt%date//" "//dt%time
+    dt%leap     = leap_yr( dt%yr )
+    dt%dow      = day_of_the_week( dt%yr, dt%mo, dt%dy )
+    dt%doy      = count_days( dt%yr, dt%mo, dt%dy, epochyr = dt%yr )
+    dt%dsc      = dt%hr * 3600 + dt%mi * 60 + dt%sc
+  end subroutine
+
   pure elemental function plus_days ( dt, days ) result ( dtp )
     class(dt_ty), intent(in) :: dt
     type(dt_ty)              :: dtp
@@ -412,6 +434,7 @@ contains
       end if
       dtp%dy = 1
     end do
+    call sync_char_fields( dtp )
   end function
 
   pure elemental function minus_days ( dt, days ) result ( dtp )
@@ -430,6 +453,7 @@ contains
       end if
       dtp%dy = ndays_mon ( dtp%yr,  dtp%mo )
     end do
+    call sync_char_fields( dtp )
   end function
   
   pure elemental function plus_hrs ( dt, hrs ) result ( dtp )
@@ -452,6 +476,7 @@ contains
       end if
       dtp%hr = 0
     end do
+    call sync_char_fields( dtp )
   end function
 
   pure elemental function minus_hrs ( dt, hrs ) result ( dtp )
@@ -474,6 +499,7 @@ contains
       end if
       dtp%hr = 23
     end do
+    call sync_char_fields( dtp )
   end function
 
   pure elemental function plus_mins ( dt, mins ) result (dtp)
@@ -500,6 +526,7 @@ contains
       end if
       dtp%mi = 0
     end do
+    call sync_char_fields( dtp )
   end function
 
   pure elemental function minus_mins ( dt, mins ) result ( dtp )
@@ -526,6 +553,7 @@ contains
       end if
       dtp%mi = 59
     end do
+    call sync_char_fields( dtp )
   end function
 
   pure elemental function plus_secs ( dt, secs ) result ( dtp )
@@ -556,6 +584,7 @@ contains
       end if
       dtp%sc = 0
     end do
+    call sync_char_fields( dtp )
   end function
 
   pure elemental function minus_secs ( dt, secs ) result ( dtp )
@@ -586,6 +615,7 @@ contains
       end if
       dtp%sc = 59
     end do
+    call sync_char_fields( dtp )
   end function
 
   pure elemental logical function is_leap_yr ( yr )
