@@ -17,7 +17,7 @@ module dt_mo
   public :: strptime, strftime, print_dts
   public :: get_rec_date, get_pos_rec
   public :: LAB_WDAY, LAB_WDAY_JP, leap_yr
-  public :: count_days
+  public :: count_days, ndays_mon
   public :: day_of_the_week
   public :: tm_ty
   public :: get_timestamp_30min
@@ -620,15 +620,12 @@ contains
 
   pure elemental logical function is_leap_yr ( yr )
     integer, intent(in) :: yr
-    !is_leap_yr = ( mod(yr, 4) == 0 .and. .not. mod(yr, 100) == 0 ) .or. mod(yr, 400) == 0 ! Precise but very slow
-    !is_leap_yr = findloc( LEAPYEARS, yr, dim = 1 ) > 0
-    is_leap_yr = mod( yr, 4 ) == 0 ! Best so far
+    is_leap_yr = ( mod(yr, 4) == 0 .and. .not. mod(yr, 100) == 0 ) .or. mod(yr, 400) == 0
   end function
 
   pure elemental integer function leap_yr ( yr )
     integer, intent(in) :: yr
-    !if ( ( mod(yr, 4) == 0 .and. .not. mod(yr, 100) == 0 ) .or. mod(yr, 400) == 0 ) then ! Precise but very slow
-    if ( mod( yr, 4 ) == 0 ) then
+    if ( ( mod(yr, 4) == 0 .and. .not. mod(yr, 100) == 0 ) .or. mod(yr, 400) == 0 ) then
       leap_yr = 1
     else
       leap_yr = 0
