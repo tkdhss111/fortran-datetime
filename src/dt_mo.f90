@@ -274,26 +274,12 @@ contains
     dt%date     = dt%yyyy//"-"//dt%mm//"-"//dt%dd
     dt%time     = dt%hh//":"//dt%nn//":"//dt%ss
     dt%datetime = dt%date//" "//dt%time
-    ! Defensive: iostat-guarded reads so a short / empty / malformed input
-    ! string doesn't abort the whole program with forrtl severe(59)
-    ! "list-directed I/O syntax error". On parse failure leave the
-    ! corresponding integer at 0 — callers' existing `dt%mo /= 0 .and.
-    ! dt%dy /= 0` guards (visible just below) already treat that as
-    ! "missing date" and skip gracefully.
-    !
-    ! Background: prior to this fix, strptime() called with an empty or
-    ! truncated string (e.g., uninitialized dt_ty entries surfacing in
-    ! deep historical past-instance lookups) crashed the whole MPI job.
-    ! Observed in tkd-07-load-forecast FY2020-Q1 / 2020-12-31 evals.
-    block
-      integer :: ios_dt
-      read ( dt%yyyy, *, iostat=ios_dt ) dt%yr; if ( ios_dt /= 0 ) dt%yr = 0
-      read ( dt%mm,   *, iostat=ios_dt ) dt%mo; if ( ios_dt /= 0 ) dt%mo = 0
-      read ( dt%dd,   *, iostat=ios_dt ) dt%dy; if ( ios_dt /= 0 ) dt%dy = 0
-      read ( dt%hh,   *, iostat=ios_dt ) dt%hr; if ( ios_dt /= 0 ) dt%hr = 0
-      read ( dt%nn,   *, iostat=ios_dt ) dt%mi; if ( ios_dt /= 0 ) dt%mi = 0
-      read ( dt%ss,   *, iostat=ios_dt ) dt%sc; if ( ios_dt /= 0 ) dt%sc = 0
-    end block
+    read ( dt%yyyy, * ) dt%yr
+    read ( dt%mm,   * ) dt%mo
+    read ( dt%dd,   * ) dt%dy
+    read ( dt%hh,   * ) dt%hr
+    read ( dt%nn,   * ) dt%mi
+    read ( dt%ss,   * ) dt%sc
     dt%leap = leap_yr ( dt%yr )
     if ( dt%mo /= 0 .and. dt%dy /= 0 ) then
       dt%dow = day_of_the_week ( dt%yr, dt%mo, dt%dy )
