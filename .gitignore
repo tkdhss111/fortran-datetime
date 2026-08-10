@@ -4,3 +4,9 @@ build/
 app/bak/
 src/bak/
 test/bak/
+
+# Editor/tooling and compiler artifacts
+tags
+*.mod
+*.smod
+*.o
